@@ -3,7 +3,7 @@ module Gurumes
     def initialize(area, food)
       @area = area
       @food = food
-      @hit = 20
+      @hit = 21
     end
 
     def run

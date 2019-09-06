@@ -17,13 +17,13 @@
         </form>
       </div>
     </div>
-    <div class="row justify-content-center">
-        <div v-for="shop in shops" v-if="shops" v-bind:id="'row_shop_' + shop.id">
+    <div class="row justify-content-center search-index">
+        <div class="col-sm-4" v-for="shop in shops" v-if="shops" v-bind:id="'row_shop_' + shop.id">
             <div class="shop-list">
               <a :href="shop.url" target="_blank">
                 {{shop.name}}
-                <img :src="shop.image_url.shop_image1">
               </a>
+              <img :src="shop.image_url.shop_image1">
             </div>
         </div>
     </div>
@@ -32,7 +32,7 @@
 
 
 <script>
-  let alert = document.getElementsByClassName("errors-list"); 
+  let alert = document.getElementsByClassName("errors-list");
   let alert_box = document.getElementsByClassName("error-box");
 
   import axios from 'axios';
@@ -97,12 +97,20 @@
 </script>
 
 <style scoped>
+a{
+  display: block;
+}
+
 .search-box{
   margin-top:70px;
 }
 
+.search-index{
+  margin-top:70px;
+}
+
 .shop-list{
-  margin:15px;
+  margin:15px 15px;
 }
 
 .food-form{
