@@ -22,3 +22,10 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+* 概要
+・Vue.jsを用いたSPA実装に興味があったので https://qiita.com/a-itabashi/items/66ecb82194f65b39ff10 に書かれていたやつをやってみた
+
+* 環境
+Ruby:2.6.2
+Rails:6.0.0
